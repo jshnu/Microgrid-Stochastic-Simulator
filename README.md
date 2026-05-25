@@ -37,8 +37,8 @@ To guarantee mathematical consistency and eliminate API execution conflicts, the
 
 
 1. Configure a Virtual Environment (Recommended):
-[Bash]
 ```text
+[Bash]
 python -m venv myenv
 # On Windows activation:
 myenv\Scripts\activate
