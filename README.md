@@ -45,8 +45,8 @@ myenv\Scripts\activate
 # On macOS/Linux activation:
 source myenv/bin/activate
 ```
-```text
 2.Install Package Dependencies:
+```text
 [Bash]
 pip install -r requirements.txt
 ```
