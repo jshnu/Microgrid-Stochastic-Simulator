@@ -37,32 +37,34 @@ To guarantee mathematical consistency and eliminate API execution conflicts, the
 
 
 1. Configure a Virtual Environment (Recommended):
-<Bash>
+[Bash]
+```text
 python -m venv myenv
 # On Windows activation:
 myenv\Scripts\activate
 # On macOS/Linux activation:
 source myenv/bin/activate
-
+```
+```text
 2.Install Package Dependencies:
-<Bash>
+[Bash]
 pip install -r requirements.txt
-
+```
 
 # Execution Instructions
 ```text
 1. Verification of Simulation Convergence BoundsBefore executing full system scenario profiles, run the tracking script to evaluate the computational performance boundaries and prove the structural convergence limit of the model (N = 2500):
-<Bash>
+[Bash]
 python Convergence_Test.py
 This routine tests historical dataset scaling across iterations ranging from N=50 to N=5000, saving the structural verification plot as MC_Convergence_Graph.png.
 
 2. Running Microgrid Architecture ScenariosThe master simulation execution profile is fully modularized. To evaluate a specific infrastructure tier:Open Implementation.py in a text editor or IDE.
 Locate the master scenario select toggle under Phase 4:
-<Python>
+[Python]
 # Select 'A', 'B', 'C', or 'D'
 SELECTED_SCENARIO = 'D'  
 Execute the simulator from the terminal console:Bashpython Implementation.py
-<Bash>
+[Bash]
 python Implementation.py
 ```
-note: <Bash> indicates the command is run in Bash
+note: [Bash] indicates the command is run in Bash
