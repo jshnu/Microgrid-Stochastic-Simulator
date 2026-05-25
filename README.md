@@ -50,6 +50,7 @@ pip install -r requirements.txt
 
 
 # Execution Instructions
+```text
 1. Verification of Simulation Convergence BoundsBefore executing full system scenario profiles, run the tracking script to evaluate the computational performance boundaries and prove the structural convergence limit of the model (N = 2500):
 <Bash>
 python Convergence_Test.py
@@ -63,5 +64,5 @@ SELECTED_SCENARIO = 'D'
 Execute the simulator from the terminal console:Bashpython Implementation.py
 <Bash>
 python Implementation.py
-
+```
 note: <Bash> indicates the command is run in Bash
